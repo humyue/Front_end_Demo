@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1350">
+	<title>产品中心</title>
+	<link rel="shortcut icon" href="images/ico02.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="./css/index.css">
+	<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="top"></div>
+	<!-- 顶部 -->
+	<!-- 导航栏部分 -->
+	<div id="nav">
+		<div class="logo"><a href="index.html"><img src="images/logo.jpg" alt=""></a></div>
+		<ul>
+			<a href="index.html"><li>首页</li></a>
+			<a href="newslist.html"><li>资讯</li></a>
+			<a href="caseslist.html"><li>案例</li></a>
+			<a href="prolist.html"><li>产品中心</li></a>
+			<a href="message.html"><li>建议反馈</li></a>
+			<a href="contact.html"><li>关于融信</li></a>
+		</ul>	
+	</div>
+	<!-- 导航栏部分 -->
+	<!-- 产品展示部分-->
+	<div id="pro_main">
+		<div id="pro_left">
+			<span class="title">融信产品</span>
+			<ul>
+				<li><a href="javascript:" id="1" onclick="show_item($(this).attr('id'))">水质采样器</a></li>
+				<li><a href="javascript:" id="2" onclick="show_item($(this).attr('id'))">水质在线自动检测仪</a></li>
+				<li><a href="javascript:">实验室COD分析仪</a></li>
+				<li><a href="javascript:">自动电位滴定仪</a></li>
+				<li><a href="javascript:">明渠流量比对系统</a></li>
+			</ul>
+		</div>
+		<div id="pro_right1" class="pro_right">
+			<span class="bread"><a href="">产品中心</a> &gt; <a href="">水质采样器</a></span>
+			<br>
+			<ul>
+				<li>
+					<a href=""><img src="images/pro1-1.png" alt=""></a>
+					<a href=""><span class="pro_name">DR-801B手持式水质自动采样器</span></a>
+				</li>
+				<li>
+					<a href=""><img src="images/pro1-2.jpg" alt=""></a>
+					<a href=""><span class="pro_name">DR-803A水质自动采样器（在线联机型）</span></a>
+				</li>
+				<li>
+					<a href=""><img src="images/pro1-3.jpg" alt=""></a>
+					<a href=""><span class="pro_name">DR-803B水质自动采样器（水站型）</span></a>
+				</li>
+				<li>
+					<a href=""><img src="images/pro1-4.png" alt=""></a>
+					<a href=""><span class="pro_name">DR-803C水质自动采样器（便携型）</span></a>
+				</li>
+				<li>
+					<a href=""><img src="images/pro1-5.jpg" alt=""></a>
+					<a href=""><span class="pro_name">DR-803D水质自动采样器（综合收费型）</span></a>
+
+				</li>
+			</ul>
+		</div>
+		<div id="pro_right2" class="pro_right none">
+			<span class="bread"><a href="">产品中心</a> &gt; <a href="">水质在线自动检测仪</a></span>
+			<br>
+			<ul>
+				<li>
+					<a href=""><img src="images/pro2-1.png" alt=""></a>
+					<a href=""><span class="pro_name">DR-103A CODcr水质在线自动监测仪</span></a>
+				</li>
+				<li>
+					<a href=""><img src="images/pro2-2.png" alt=""></a>
+					<a href=""><span class="pro_name">DR-103B 氨氮水质在线自动监测仪</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+	<!-- 产品展示部分-->
+	<!-- 底部 -->
+	<div id="xuke">
+		<div id="link"> 
+			<ul>
+				<li><a href="">网站首页</a>|</li>
+				<li><a href="">关于我们</a>|</li>
+				<li><a href="">服务条款</a>|</li>
+				<li><a href="">广告服务</a>|</li>
+				<li><a href="">免责声明</a>|</li>
+				<li><a href="">联系方式</a></li>
+			</ul>
+		</div>
+		<div id="copy">Copyright 2016- 2020  浙江融信环保科技有限公司 Rosan Pro-Enviroment Technology Inc. 浙ICP 备330000700563号.</div>
+	</div>
+	<!-- 底部 -->
+	<!--回到顶部-->
+	<div id="gotop"></div>
+	<!--回到顶部-->
+</body>
+<script type="text/javascript">
+	function show_item(id){
+		$("#pro_right"+id).show().siblings('.pro_right').hide();
+	}
+</script>
+</html>
