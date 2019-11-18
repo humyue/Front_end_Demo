@@ -4,27 +4,5 @@
 
 ### [1.融信环保科技有限公司官网](./rosan)
 
-页面展示：
-* 首页
+预览地址：[https://humyue.github.io/Front_end_Demo/rosan/index.html](https://humyue.github.io/Front_end_Demo/rosan/index.html)
 
-![首页](./demo_picture/1.png)
-
-* 资讯
-
-![资讯](./demo_picture/2.png)
-
-* 项目案例
-
-![项目案例](./demo_picture/3.png)
-
-* 产品中心
-
-![产品中心](./demo_picture/4.png)
-
-* 建议反馈
-
-![建议反馈](./demo_picture/5.png)
-
-* 关于
-
-![关于](./demo_picture/6.png)
