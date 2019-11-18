@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>瀑布流</title>
+		<style type="text/css">
+			*{
+				padding:0px;
+				margin: 0px;
+			}
+			#main{
+				width:100%;
+				overflow: hidden;
+			}
+			#main .list{
+				width: 300px;
+				border: 3px solid red;
+				float: left;
+				margin:0 10px;
+			}
+		</style>
+		<!-- jquery-1.7.2.min.js -->
+		<!-- jquery-3.1.0.js -->
+		<script type = "text/javascript" src="jquery-1.7.2.min.js"></script>
+		<script type = "text/javascript">
+			$(function(){
+				function zhuijia(){//追加图片用的函数
+					var num = Math.ceil(Math.random()*16);//抽取1--16之间的随机整数
+					var min_div=0;
+					$('#main .list').each(function(i){//循环获得高度最小列的序号
+						if($('#main .list').eq(i).height()<$('#main .list').eq(min_div).height()){
+							min_div=i;
+						}
+					})
+					$('#main .list').eq(min_div).append('<img src="images/'+num+'.jpg"/>')//把图片追加到高度最小的列中
+				}
+
+				$(window).scroll(function(){
+					var bottom = $('#main').height()-$(window).height()-$(document).scrollTop();
+					if(bottom<200){
+						zhuijia();
+					}
+				})		
+			})
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<div class="list">
+				<img src="images/1.jpg" alt="" />
+				<img src="images/2.jpg" alt="" />
+				<img src="images/3.jpg" alt="" />
+				<img src="images/4.jpg" alt="" />
+			</div>
+			<div class="list">
+				<img src="images/5.jpg" alt="" />
+				<img src="images/6.jpg" alt="" />
+				<img src="images/7.jpg" alt="" />
+				<img src="images/8.jpg" alt="" />
+			</div>
+			<div class="list">
+				<img src="images/9.jpg" alt="" />
+				<img src="images/10.jpg" alt="" />
+				<img src="images/11.jpg" alt="" />
+				<img src="images/12.jpg" alt="" />
+			</div>
+			<div class="list">
+				<img src="images/13.jpg" alt="" />
+				<img src="images/14.jpg" alt="" />
+				<img src="images/15.jpg" alt="" />
+				<img src="images/16.jpg" alt="" />
+			</div>
+		</div>
+	</body>
+</html>

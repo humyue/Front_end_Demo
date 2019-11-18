@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>由大神设计</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script type = "text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.right .weichat').mouseover(function(){//鼠标移入显示微信码
+					$('#show_box .show_pic .weixin').css({'display':'block'});
+				})
+				$('.right .weichat').mouseout(function(){
+					$('#show_box .show_pic .weixin').css({'display':'none'});
+				})
+
+				$('#menu_box .menu .daohang').mouseover(function(){
+					$('#mid_box .hide_tag').css({'display':'block'});
+				})
+				$('#menu_box .menu .daohang').mouseout(function(){
+					$('#mid_box .hide_tag').css({'display':'none'});
+				})
+
+			})
+		</script>
+	</head>
+	<body>
+		<!-- 顶部区域开始 -->
+		<div id="top_box">
+			<div id="top">
+				<!-- 左侧部分开始 -->
+				<div class="left">
+					<p class="hi">您好,欢迎光临凡客诚品！</p>
+					<p class="login_reg"> 
+						<a href="" >登录</a>　|　<a href="" >注册</a> 
+					</p>
+					<a href="" class="left_a">我的订单</a>
+					<a href="" class="left_a">收藏本站</a>
+				</div>
+				<!-- 左侧部分结束 -->
+				<!-- 右侧部分开始 -->
+				<ul class="right">
+					<li class="right_menu">
+						<a href="">我的凡客</a>
+					</li>
+					<li class="right_menu"><a href="">帮助中心</a></li>
+					<li class="right_menu"><a href="">网站公告</a></li>
+					<li class="shoujifanke"><a href="">手机凡客</a></li>
+					<li class="shouji"></li>
+					<li class="zaixiankefu"><a href="">在线客服</a></li>
+					<li class="kefu"></li>
+					<li class="weichat"></li>	
+					<li class="weibo"></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 顶部区域结束 -->
+		<!-- 展示区域开始 -->
+		<div id="show_box">
+			<div class="show_pic">
+				<a href="" class="weixin"></a>
+			</div>	
+		</div>
+		<!-- 展示区域结束 -->
+		<!-- 搜索区域开始 -->
+		<div id="serach_box">
+			<!-- logo开始 -->
+			<div class="logo"></div>
+			<!-- logo结束 -->
+			<!-- 搜索框开始 -->
+			<form action="" method="">
+				<input type="text" class="text" value="搜“T恤”，体验与众不同"/>
+				<input type="submit" class="sub" value=""/>
+			</form>
+			<!-- 搜索框结束 -->
+			<!-- 热搜词开始 -->
+			<ul class="tags_ul">
+				<li class="bubian">热门搜索：</li>
+				<li class="tag"><a href="">T恤</a></li>
+				<li class="tag"><a href="">雨声潺潺</a></li>
+				<li class="tag"><a href="">穆旦</a></li>
+				<li class="tag"><a href="">只有上帝</a></li>
+				<li class="tag"><a href="">帆布</a></li>
+				<li class="tag"><a href="">鞋衬衫</a></li>
+			</ul>
+			<!-- 热搜词结束 -->
+			<!-- 购物车开始  -->
+			<div class="shop">
+				<span class="word">购物车(0)</span>
+			</div>
+			<!-- 购物车结束  -->
+		</div>
+		<!-- 搜索区域结束 -->
+		<!-- 导航栏开始 -->
+		<div id="menu_box">
+			<ul class="menu">
+				<li><a href="" class="all">全部商品分类</a></li>
+				<li><a href="" class="daohang">新品</a></li>
+				<li><a href="" class="daohang">T恤</a></li>
+				<li><a href="" class="daohang">衬衫</a></li>
+				<li><a href="" class="daohang">麻</a></li>
+				<li><a href="" class="daohang">裤装</a></li>
+				<li><a href="" class="daohang">鞋</a></li>
+				<li><a href="" class="daohang">袜品</a></li>
+				<li><a href="" class="daohang">Nautilus</a></li>
+		    </ul>	
+		</div>
+		<!-- 导航栏结束 -->
+		<!-- 中间区域开始 -->
+		<div id="mid_box">
+			<!-- 隐藏区域 -->
+			<div class="hide_tag">
+				<div class="tag1">
+					<a href="" class="tag1_ico"></a>
+					<p><a href="" class="tag1_t">凡客T恤 运动速干</a></p>
+					<p class="tag1_intr">在快速吸收皮肤表面汗液和湿气的同时，亦能保证汗水的有效传导和扩散，让皮肤时刻保持干爽舒适</p>
+					<p class="tag1_price">￥168</p>
+				</div>
+				
+				<div class="tag2">
+					<a href="" class="tag2_ico"></a>
+					<p><a href="" class="tag2_t">凡客POLO衫 长绒棉</a></p>
+					<p class="tag2_intr">长绒棉 纤维柔长 强度也更高 打孔衬条</p>
+					<p class="tag2_price">￥168</p>
+				</div>
+			</div>
+			<!-- 隐藏区域结束 -->
+			<!-- 中间左边开始 -->
+			<div class="left_box">
+				<div class="top1">
+					<a href="" class="nanzhuang">男装</a>
+					<div class="top1_1">
+						<a href="" class="tag1">T恤</a>
+					</div>
+					<div class="top1_2">
+						<ul class="tag2">
+							<li><a href="" class="cont">印花</a></li>
+							<li><a href="" class="cont">水柔棉</a></li>
+							<li><a href="" class="cont">运动速干</a></li>
+							<li><a href="" class="cont">POLO</a></li>
+							<li><a href="" class="cont">穆旦</a></li>
+							<li><a href="" class="cont">只有上帝</a></li>
+							<li><a href="" class="cont">雨声潺潺</a></li>       
+						</ul>
+					</div>
+					<div class="top1_3">
+						<a href="" class="tag3">衬衫</a>
+					</div>
+					<div class="top1_4">
+						<ul class="tag4">
+							<li><a href="" class="cont">免烫</a></li>
+							<li><a href="" class="cont">府绸衬衫</a></li>
+							<li><a href="" class="cont">牛津纺</a></li>
+							<li><a href="" class="cont">麻衬衫</a></li>           
+						</ul>	
+					</div>
+					<div class="top1_5">
+						<a href="" class="tag5">上装</a>
+					</div>
+					<div class="top1_6">
+						<ul class="tag6">
+							<li><a href="" class="cont">麻西服</a></li>
+							<li><a href="" class="cont">针织衫</a></li>
+							<li><a href="" class="cont">皮肤衣</a></li>        
+						</ul>		
+					</div>
+					<div class="top1_7">
+						<a href="" class="tag7">裤装</a>
+					</div>
+					<div class="top1_8">
+						<ul class="tag8">
+							<li><a href="" class="cont">牛仔裤</a></li>
+							<li><a href="" class="cont">休闲裤</a></li>
+							<li><a href="" class="cont">短裤</a></li>
+							<li><a href="" class="cont">棉麻裤</a></li>                  
+						</ul>		
+					</div>
+				</div>	
+				<div class="top2">
+					<a href="" class="nvzhuang">女装</a>
+					<ul class="top2_c">
+						<li><a href="" class="cont">T恤</a></li>
+						<li><a href="" class="cont">空调衫</a></li>
+						<li><a href="" class="cont">皮肤衣</a></li>
+						<li><a href="" class="cont">衬衫裙</a></li> 
+						<li><a href="" class="cont">牛仔裤</a></li> 
+						<li><a href="" class="cont">打底背心</a></li> 
+					</ul>		
+				</div>
+				<div class="top3">
+					<a href="" class="fanbuxie">帆布鞋</a>
+					<ul class="top3_c">
+						<li><a href="" class="cont">男款</a></li>
+						<li><a href="" class="cont">女款</a></li>
+						<li><a href="" class="cont">高帮</a></li>
+						<li><a href="" class="cont">低帮</a></li>          
+					</ul>		
+				</div>
+				<div class="top4">
+					<a href="" class="qita">其他</a>
+					<ul class="top4_c">
+						<li><a href="" class="cont">家居</a></li>
+						<li><a href="" class="cont">袜品</a></li>
+						<li><a href="" class="cont">配饰</a></li>
+						<li><a href="" class="cont">童装</a></li>          
+					</ul>	       
+				</div>
+			</div>
+			<!-- 中间左边结束 -->
+			<!-- 中心开始 -->
+			<div class="zhongxin"></div>
+			<!-- 中心结束 -->
+			<!-- 中间右边开始 -->
+			<a href=""><div class="right1"></div></a>
+			<a href=""><div class="right2"></div></a>
+			<!-- 中间右边结束 -->
+		</div>
+		<!-- 中间区域结束 -->
+		<!-- 空白区域 -->
+		<div class="kongbai"></div>
+		<!-- 衣服展示区域开始 -->
+        <div id="yifu_show_box">
+      		<p class="meiriqianggou">每日抢购</p>
+      		<ul>
+      			<li><a href="" class="yifu1"></a></li>
+	      		<li><a href="" class="yifu2"></a></li>
+	      		<li><a href="" class="yifu3"></a></li>
+	      		<li><a href="" class="yifu4"></a></li>
+	      		<li><a href="" class="yifu5"></a></li>
+	      		<li><a href="" class="yifu6"></a></li>
+	      		<li><a href="" class="yifu7"></a></li>
+	      		<li><a href="" class="yifu8"></a></li>
+	      		<li><a href="" class="yifu9"></a></li>
+	      		<li><a href="" class="yifu10"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+	      		<li><a href="" class="yifu"></a></li>
+      		</ul>
+      		<p class="shangzhuang">上装</p>
+      		<ul>
+      			<li><a href="" class="shangzhuang1"></a></li>
+      			<li><a href="" class="shangzhuang2"></a></li>
+      			<li><a href="" class="shangzhuang3"></a></li>
+      			<li><a href="" class="shangzhuang4"></a></li>
+      		</ul>
+      		<p class="xiazhuang">下装</p>
+      		<ul>
+      			<li><a href="" class="xiazhuang1"></a></li>
+      			<li><a href="" class="xiazhuang2"></a></li>
+      			<li><a href="" class="xiazhuang3"></a></li>
+      			<li><a href="" class="xiazhuang4"></a></li>
+      		</ul>
+      		<p class="gengduojingpin">更多精品</p>
+      		<ul>
+      			<li><a href="" class="gengduojingpin1"></a></li>
+      			<li><a href="" class="gengduojingpin2"></a></li>
+      			<li><a href="" class="gengduojingpin3"></a></li>
+      			<li><a href="" class="gengduojingpin4"></a></li>
+      		</ul>
+        </div>
+        <!-- 衣服展示区域结束 -->
+        <!-- 空白区域 -->
+		<div class="kongbai2"></div>
+		<!-- 帮助区域开始 -->
+		<div id="help_box">
+			<ul>
+				<li class="guanyufanke">
+					<p class="guanyu">关于凡客</p>
+					<p><a href="" class="jianjie">公司简介</a></p>
+					<p><a href="" class="lianxi">联系我们</a></p>
+					<p><a href="" class="lianjie">友情链接</a></p>
+				</li>
+				<li class="xinshouzhinan">
+					<p class="xinshou">新手指南</p>
+					<p><a href="" class="zhanghu">账户注册</a></p>
+					<p><a href="" class="gouwu">购物流程</a></p>
+				</li>
+				<li class="peisongfanwei">
+					<p class="peisong">配送范围及时间</p>
+					<p ><a href="" class="guonei">国内配送</a></p>
+					<p ><a href="" class="dingdan">订单拆分</a></p>
+				</li>
+				<li class="zhifufangshi">
+					<p class="zhifu">支付方式</p>
+					<p><a href="" class="fukuan">货到付款</a></p>
+					<p><a href="" class="zaixian">在线支付</a></p>
+					<p><a href="" class="yue">礼品卡及账户余额</a></p>
+					<p><a href="" class="qita">其他支付方式</a></p>
+				</li>
+				<li class="shouhoufuwu">
+					<p class="shouhou">售后服务</p>
+					<p><a href="" class="zhengce">退换货政策</a></p>
+					<p><a href="" class="liucheng">退换货办理流程</a></p>
+					<p><a href="" class="wangshang">退换货网上办理</a></p>
+					<p><a href="" class="tuikuan">退款说明</a></p>
+				</li>
+				<li class="bangzhuzhongxin">
+					<p class="bangzhu">帮助中心</p>
+					<p><a href="" class="zaixian">在线客服</a></p>
+					<p><a href="" class="mima">找回密码</a></p>
+					<p><a href="" class="yinsi">隐私声明</a></p>
+				</li>
+			</ul>
+		</div>
+		<!-- 帮助区域结束 -->
+		<!-- 许可区域开始 -->
+		<div class="chengnuo">
+			<ul>
+				<li><a href="" class="tuihuo"></a></li>
+				<li><a href="" class="yunfei"></a></li>
+				<li><a href="" class="fukuan"></a></li>
+				<li><a href="" class="kefu"></a></li>
+		</ul>
+		</div>
+		<div class="xukehao">
+			<p class="xuke">Copyright 2007 - 2016 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
+		</div>
+		<div class="fankechengpin">
+			<p class="fanke">
+				凡客诚品（北京）科技有限公司
+			</p>
+		</div>
+		<!-- 许可区域结束 -->
+		<!-- 图标区域开始 -->
+		<div class="tubiao">
+			<p ><a href="" class="tubiao1"></a></p>
+			<p class="tubiao2"></p>
+			<p ><a href="" class="tubiao3"></a></p>
+			<p ><a href="" class="tubiao4"></a></p>
+			<p ><a href="" class="tubiao5"></a></p>
+			<p ><a href="" class="tubiao6"></a></p>
+		</div>
+		<!-- 图标区域结束 -->
+	</body>
+</html>

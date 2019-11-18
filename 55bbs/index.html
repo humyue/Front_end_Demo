@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>55 bbs网站</title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			#flash{
+				width: 294px;
+				height: 539px;
+				position: relative;
+				border: 1px solid blue;
+				margin:0 auto;
+				overflow: hidden;
+			}
+			#flash .top_img{
+				width: 2058px;
+				height: 475px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			#flash .top_img img{
+				float: left;
+			}
+			#flash .bottom{
+				position: absolute;
+				left: 0px;
+				top: 469px;
+				width: 294px;
+			}
+			#flash .bottom li{
+				float: left;
+				width: 42px;
+				height: 70px;
+				list-style: none;
+				position: relative;
+			}
+			#flash .bottom li.cur{
+				background: url(images/icon.png) no-repeat -57px -86px;
+			}
+			#flash .bottom li.cur img{
+				opacity: 1;
+				filter:alpha(opacity=100);
+			}
+			#flash .bottom li img{
+				position: absolute;
+				top: 7px;
+				left: 0px;
+				opacity: 0.7;
+				filter:alpha(opacity=70);
+			} 
+		</style>
+		<!-- jquery-1.7.2.min.js -->
+		<!-- jquery-3.1.0.js -->
+		<script type = "text/javascript" src="jquery-1.7.2.min.js"></script>
+		<script type = "text/javascript">
+			$(function(){
+				var index = 0;
+				var timer = setInterval(auto,3000);
+				function auto(){	
+					index++;
+					//index%=7;
+					index = (index==7)?0:index;
+					var left = -294*index;//计算left值
+					$('#flash .top_img').stop().animate({'left':left+'px'},500);
+					$('#flash .bottom li').eq(index).addClass('cur').siblings('li').removeClass('cur');
+					/*$('#flash .bottom li').eq(index).siblings('li').removeClass('cur');*/
+				}
+				$('#flash .bottom li').mouseover(function(){
+					clearInterval(timer);
+					index=$(this).index('li');//获得鼠标移入的li的序号
+					var left = -294*index;//计算left值
+					$('#flash .top_img').stop().animate({'left':left+'px'},500);
+					$('#flash .bottom li').eq(index).addClass('cur').siblings('li').removeClass('cur');
+				})
+				$('#flash .bottom li').mouseout(function(){
+					timer = setInterval(auto,3000);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="flash">
+			<div class="top_img">
+				<img src="images/1.jpg" alt="" />
+				<img src="images/2.jpg" alt="" />
+				<img src="images/3.jpg" alt="" />
+				<img src="images/4.jpg" alt="" />
+				<img src="images/5.jpg" alt="" />
+				<img src="images/6.jpg" alt="" />
+				<img src="images/7.jpg" alt="" />
+			</div>
+			<ul class="bottom">
+				<li class="cur"><img src="images/8.jpg" alt="" /></li>
+				<li><img src="images/9.jpg" alt="" /></li>
+				<li><img src="images/10.jpg" alt="" /></li>
+				<li><img src="images/11.jpg" alt="" /></li>
+				<li><img src="images/12.jpg" alt="" /></li>
+				<li><img src="images/13.jpg" alt="" /></li>
+				<li><img src="images/14.jpg" alt="" /></li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>55bbs热点新闻</title>
+		<style type="text/css">
+			*{
+				padding:0px;
+				margin: 0px;
+			}
+			#news{
+				width: 400px;
+				height: 40px;
+				border: 3px solid blue;
+				margin:0 auto;
+				margin-top: 100px;
+				position: relative;
+				overflow: hidden;
+			}
+			#news ul{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width:400px; 
+			}
+			#news ul li{
+				height: 40px;
+				line-height:40px;
+				font-family: 微软雅黑;
+				color: white;
+				list-style: none;
+			}
+		</style>
+		<!-- jquery-1.7.2.min.js -->
+		<!-- jquery-3.1.0.js -->
+		<script type = "text/javascript" src="jquery-1.7.2.min.js"></script>
+		<script type = "text/javascript">
+			$(function(){
+				var cur = 0;
+				setInterval(function(){
+					cur++;
+					if(cur==6){
+						$('#news ul').css({'top':'0px'});
+						cur=1;
+					}
+					var top = cur*-40;
+					$('#news ul').animate({'top':top+'px'})
+				},1000)
+			})
+		</script>
+	</head>
+	<body>
+		<div id="news">
+			<ul>
+				<li style="background:red">[商场] Chanel的芭蕾舞鞋专柜价是多少呢？ </li>
+				<li style="background:orange">[商场] 麻麻去美国不让我跟着，愤恨的买了几件Cooper</li>
+				<li style="background:pink"> [丽人] 40岁再演15岁少女【满脸浮肿】太违和被嘲 </li>
+				<li style="background:yellow"> [丽人] 超好用护肤品分享，全方位呵护身体每一寸肌 </li>
+				<li style="background:purple"> [丽人] 40岁再演15岁少女【满脸浮肿】太违和被</li>
+				<li style="background:red">[商场] Chanel的芭蕾舞鞋专柜价是多少呢？ </li>
+			</ul>		
+		</div>
+	</body>
+</html>

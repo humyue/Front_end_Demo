@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>京东轮换板</title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin:0px;
+			}
+			#flash{
+				width: 730px;
+				height: 454px;
+				border: 3px solid blue;
+				margin: 0 auto;
+				position: relative;
+			}
+			#flash a img{
+				position: absolute;
+				top:0px;
+				left: 0px;
+			}
+			#flash ul{
+				position: absolute;
+				right:300px;
+				top: 420px;
+			}
+			#flash ul li{
+				float: left;
+				list-style: none;
+				width: 22px;
+				height: 22px;
+				line-height: 22px;
+				text-align: center;
+				color: white;
+				font-size: 12px;
+				font-family: arial;
+				background: #3E3E3E;
+				margin-right: 5px;
+				border-radius: 11px;
+
+			}
+			#flash ul li.cur{
+				background: #B61B1F; 
+				cursor:pointer;
+			}
+		</style>
+		<script type="text/javascript" src="jquery-1.7.2.min.js"></script>	
+		<script type="text/javascript">
+			
+			$(function(){
+				var i=0;
+				var timer;
+				//用jquery方法设置第一张图片显示，其余隐藏
+  				$('.ig').eq(0).show().siblings('.ig').hide();
+  				//调用showTime()函数（轮播函数）
+  				Show(0);
+  				showTime();
+   				//当鼠标经过下面的数字时，触发两个事件（鼠标悬停和鼠标离开）
+				$('.tab').hover(function(){
+				   //获取当前i的值，并显示，同时还要清除定时器
+				   i = $(this).index();
+				   Show(i);
+				   clearInterval(timer);
+				},function(){
+				    //
+				   showTime();
+				});
+   				//创建一个showTime函数
+				function showTime(){
+				  	//定时器
+				  	timer = setInterval(function(){
+					  //调用一个show()函数
+					  i++;
+					  i%=5
+					  Show(i);
+					},1000);
+				}
+				//创建一个Show函数
+				function Show(index){
+				  //在这里可以用其他jquery的动画
+				  $('.ig').eq(index).fadeIn(300)
+				  $('.ig').eq(index).siblings('.ig').fadeOut(300);
+				  $('.ig').eq(index).show().siblings('.ig').hide();
+				  //给.tab创建一个新的Class为其添加一个新的样式，并且要在css代码中设置该样式
+				  $('.tab').eq(index).addClass('cur').siblings('.tab').removeClass('cur');
+				}
+			})
+		</script>	
+	</head>
+	<body>
+		<div id="flash">
+			<a class="ig" href=""><img src="images/1.jpg" alt=""/></a>
+			<a class="ig" href=""><img src="images/2.jpg" alt=""/></a>
+			<a class="ig" href=""><img src="images/3.jpg" alt=""/></a>
+			<a class="ig" href=""><img src="images/4.jpg" alt=""/></a>
+			<a class="ig" href=""><img src="images/5.jpg" alt=""/></a>
+			<ul>
+				<li class="tab">1</li>
+				<li class="tab">2</li>
+				<li class="tab">3</li>
+				<li class="tab">4</li>
+				<li class="tab">5</li>
+			</ul>
+		</div>
+	</body>
+</html>
